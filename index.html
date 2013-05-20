@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Decision maker</title>
+    </head>
+    <body>
+        <div id="wrap">
+        
+            <div id="content" class="cantarell">
+                <h1>Decision maker</h1>
+                
+                <div id="options">
+                    <div class="input-prepend">
+                        <span class="add-on">1.</span>
+                        <input type="text" class="option" id="option0">
+                    </div>
+                    <div class="input-prepend">
+                        <span class="add-on">2.</span>
+                        <input type="text" class="option" id="option1">
+                    </div>
+                </div>
+                
+                <div class="btn-group">
+
+                    <button type="submit" id="decide" class="btn btn-info">Decide</button>
+                    <button type="button" id="add" class="btn btn-success">Add</button>                    
+                    <button type="button" id="remove" class="btn btn-danger">Delete</button>
+
+                </div>
+                <div id="pre-answer">The right thing to choose is:</div>
+                <div id="answer"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

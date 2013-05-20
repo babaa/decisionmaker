@@ -1,0 +1,43 @@
+#wrap {
+    position:relative;
+    text-align: center;
+    font-size: 1.2em;
+    }
+    
+#content {
+    position:relative;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#answer {
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+#pre-answer {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    margin: 0 0 40px 0;
+    font-size: 3em;
+}
+
+button {
+    margin: 15px 5px 0;
+    font-family:Cantarell, sans-serif;
+    font-size: 1.2em;
+}
+
+.input-prepend {
+    display: block;
+}
+
+@font-face {font-family:Cantarell; src:url("../fonts/Cantarell-Regular.ttf");}
+
+.cantarell {
+    font-family:Cantarell, sans-serif; 
+    line-height:1.8em;
+}
