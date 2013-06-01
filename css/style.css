@@ -7,26 +7,26 @@
 #content {
     position:relative;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 #answer {
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 #pre-answer {
     padding: 10px;
-    margin-top: 20px;
 }
 
 h1 {
     margin: 0 0 40px 0;
     font-size: 3em;
+    line-height: 1.1em;
 }
 
 button {
-    margin: 15px 5px 0;
+    position: relative;
     font-family:Cantarell, sans-serif;
     font-size: 1.2em;
 }
@@ -40,4 +40,12 @@ button {
 .cantarell {
     font-family:Cantarell, sans-serif; 
     line-height:1.8em;
+}
+
+.icon-white {
+    margin-top: 3px;
+}
+
+.btn-group {
+    padding: 20px;
 }

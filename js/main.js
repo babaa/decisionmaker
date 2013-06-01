@@ -58,6 +58,9 @@ $('#decide').click(function(){
     
     $('#answer').html('<p>' + answerText +'</p>');
 });
+$('#reset').click(function(){
+  location.reload();
+});
 
 
 
