@@ -1,11 +1,9 @@
-var options = $('.input-prepend').last().index() + 1;
+var options = 2;
 
 /* --------- FUNCTIONS --------- */
 
 function addBox() {
-    var optionbox = '<div class="input-prepend">\
-    <span class="add-on">'+ (options + 1) +'.</span>\
-    <input type="text" class="option" id="option'+ options +'"></div></div>';
+    var optionbox = '<input type="text" class="option" id="option'+ options +'">';
 
     if(options < 10) {
         $('#options').append(optionbox);
@@ -16,9 +14,18 @@ function addBox() {
 function deleteBox(){
 
     if (options > 2) { 
-      $('.input-prepend').last().remove();
+      $('input').last().remove();
       options--;
     }
+}
+
+function decide(){
+    var choice = "#option" + returnRandom(options);
+    var answer = $(choice).val();
+    
+    var answerText = escapeHtmlEntities(answer);
+    
+    $('#answer').html('<p>' + answerText +'</p>');
 }
 
 //Function copied from stackoverflow
@@ -49,15 +56,7 @@ function returnRandom(max) {
 
 $('#add').click(addBox);
 $('#remove').click(deleteBox);
-$('#decide').click(function(){
-    
-    var choice = "#option" + returnRandom(options);
-    var answer = $(choice).val();
-    
-    var answerText = escapeHtmlEntities(answer);
-    
-    $('#answer').html('<p>' + answerText +'</p>');
-});
+$('#decide').click(decide);
 $('#reset').click(function(){
   location.reload();
 });
