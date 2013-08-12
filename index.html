@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
         <title>Decision maker</title>
     </head>
     <body>
@@ -17,15 +19,15 @@
                         <input type="text" class="option" id="option1">
                 </div>
                 
-                <div class="btn-group margin">
+                <div class="btn-block margin">
 
                     <button type="reset" id="reset" class="btn btn-inverse">Reset</button>
-                    <button type="button" id="remove" class="btn btn-inverse">Remove</button> 
+                    <button type="button" id="remove" class="btn btn-inverse linebreaker">Remove</button> 
                     <button type="button" id="add" class="btn btn-inverse">Add</button>
                     <button type="submit" id="decide" class="btn btn-success">Decide</button>
 
                 </div>
-                <div class="pad">The right thing to choose is:</div>
+                <div class="pre-decision">The right thing to choose is:</div>
                 <div id="answer"></div>
             </div>
         </div>
