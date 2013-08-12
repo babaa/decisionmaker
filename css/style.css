@@ -1,7 +1,7 @@
 #wrap {
   position:relative;
   text-align: center;
-  font-size: 2em;
+  font-size: 30px;
   }
     
 #content {
@@ -15,8 +15,12 @@
   font-size: 2em;
 }
 
-#pre-answer {
+.pad {
   padding: 10px;
+}
+
+.margin {
+	margin-top: 40px;
 }
 
 h1 {
@@ -27,17 +31,18 @@ h1 {
 
 button {
   position: relative;
+  height: 50px;
+  width: 140px;
   font-family: Cantarell, sans-serif;
-  font-size: 2em;
-}
-
-.input-prepend {
-  display: block;
+  font-size: 30px !important;
 }
 
 input[type="text"]{
-  font-size: 2em !important;
-  height: 50px !important;
+  font-size: 35px;
+  height: 50px;
+  width: 60%;
+  font-family:Cantarell; 
+  text-align: center;
 }
 
 @font-face {font-family:Cantarell; src:url("../fonts/Cantarell-Regular.ttf");}
