@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.jette.decisionmaker"
-        version   = "3.0.3">
+        version   = "3.0.0">
 
     <name>Decision Maker</name>
 
@@ -28,7 +28,7 @@
         permission on your app, which PhoneGap requires.
     -->
     <preference name="permissions"                value="none"/>
-
+    <preference name="phonegap-version"           value="2.9.0" />
     <!-- Customize your app and platform with the preference element. -->
 
     <!-- Plugins can also be added here. -->
