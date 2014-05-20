@@ -29,6 +29,7 @@ h1 {
   margin: 0 0 40px 0;
   font-size: 45px;
   line-height: 70px;
+  font-family: Cantarell, sans-serif;
 }
 
 button {
@@ -38,14 +39,37 @@ button {
   font-family: Cantarell, sans-serif;
   font-size: 20px !important;
   margin: 5px 0 5px 0;
+  color: #fff;
 }
+
+.btn {
+  border-radius: 0px;
+}
+
 
 input[type="text"]{
   font-size: 25px;
   height: 40px;
-  width: 60%;
   font-family:Cantarell;
   text-align: center;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+
+.blue {
+  background-color: #71bbd4;
+}
+
+.lettuce{
+  background-color: #9AD71A;
+}
+
+.purple {
+  background-color: #8B86BC;
+}
+
+.dark-blue{
+  background-color: #5267BA;
 }
 
 @font-face {font-family:Cantarell; src:url("../fonts/Cantarell-Regular.ttf");}

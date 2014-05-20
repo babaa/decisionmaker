@@ -3,7 +3,7 @@ var options = 2;
 /* --------- FUNCTIONS --------- */
 
 function addBox() {
-    var optionbox = '<input type="text" class="option" id="option'+ options +'">';
+    var optionbox = '<input type="text" class="form-control" id="option'+ options +'">';
 
     if(options < 10) {
         $('#options').append(optionbox);
