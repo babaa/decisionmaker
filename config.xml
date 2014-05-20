@@ -4,7 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.jette.decisionmaker"
-        version   = "4.0.0">
+        version   = "4.0.0"
+        versionCode = "140" >
 
     <name>Decision Maker</name>
 
@@ -29,13 +30,17 @@
     -->
     <preference name="permissions"                value="none"/>
     <preference name="phonegap-version"           value="3.3.0" />
+
     <!-- Customize your app and platform with the preference element. -->
 
     <!-- Plugins can also be added here. -->
     <!--
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
+
+
     -->
+    <gap:plugin name="org.apache.cordova.device" />
 
     <!-- Define app icon for each platform. -->
     <icon src="DMlogo.png" />
