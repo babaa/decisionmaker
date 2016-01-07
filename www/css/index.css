@@ -65,56 +65,37 @@ h1 {
   margin: 0 0 40px 0;
   font-size: 45px;
   line-height: 70px;
-  font-family: Cantarell, sans-serif;
+  font-family: Cardo, serif;
 }
 
 button {
   position: relative;
   height: 45px;
   width: 140px;
-  font-family: Cantarell, sans-serif;
+  font-family: Cardo, serif;
   font-size: 20px !important;
   margin: 5px 0 5px 0;
-  color: #fff;
+  background-color: white;
 }
 
 .btn {
   border-radius: 0px;
+  border: 1px solid #d7d7d7;
+
 }
 
 
 input[type="text"]{
   font-size: 25px;
   height: 40px;
-  font-family:Cantarell;
+  font-family:Cardo;
   text-align: center;
   border-radius: 0px;
   margin-bottom: 15px;
 }
 
-.blue {
-  background-color: #71bbd4;
-}
-
-.lettuce{
-  background-color: #9AD71A;
-}
-
-.purple {
-  background-color: #8B86BC;
-}
-
-.dark-blue{
-  background-color: #5267BA;
-}
-
-@font-face {
-    font-family:Cantarell; 
-    src:url("../fonts/Cantarell-Regular.ttf");
-}
-
-.cantarell {
-  font-family:Cantarell, sans-serif;
+.fontt {
+  font-family: 'Cardo', serif;
   line-height: 2em;
 }
 

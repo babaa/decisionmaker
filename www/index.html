@@ -26,14 +26,15 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
         <title>Decisionmaker</title>
     </head>
     <body>
         <div id="wrap" class="container">
         
-            <div id="content" class="cantarell">
+            <div id="content" class="fontt">
                 <h1>Decision maker</h1>
 
                 <div class="row">
@@ -46,11 +47,19 @@
                 </div>
                 <div class="btn-block margin">
 
-                    <button type="button" id="remove" class="btn dark-blue linebreaker">Remove</button> 
-                    <button type="reset" id="reset" class="btn purple">Reset</button>
-                    <button type="button" id="add" class="btn lettuce">Add</button>
+                    <button type="button" id="remove" class="btn linebreaker">
+                        <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                    </button> 
+                    <button type="reset" id="reset" class="btn ">
+                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                </button>
+                    <button type="button" id="add" class="btn ">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button>
     
-                    <button type="submit" id="decide" class="btn blue">Decide</button>
+                    <button type="submit" id="decide" class="btn ">
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                </button>
 
                 </div>
                 <div class="pre-decision">The right thing to choose is:</div>
