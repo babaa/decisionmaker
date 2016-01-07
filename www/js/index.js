@@ -48,6 +48,10 @@ var app = {
     }
 
 
+};
+
+
+
     // DECISIONMAKER CODE
 
     var options = 2;
@@ -114,6 +118,3 @@ var app = {
     });
 
 
-
-
-};
