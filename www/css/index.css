@@ -24,92 +24,107 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 
 /* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
-}
 
 /* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+
+#wrap {
+  position:relative;
+  text-align: center;
+  font-size: 20px;
+  }
+
+#content {
+  position:relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#answer {
+  padding: 15px;
+  font-size: 30px;
+}
+
+.pre-decision {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.margin {
+    margin-top: 10px;
 }
 
 h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+  margin: 0 0 40px 0;
+  font-size: 45px;
+  line-height: 70px;
+  font-family: Cantarell, sans-serif;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+button {
+  position: relative;
+  height: 45px;
+  width: 140px;
+  font-family: Cantarell, sans-serif;
+  font-size: 20px !important;
+  margin: 5px 0 5px 0;
+  color: #fff;
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
+.btn {
+  border-radius: 0px;
 }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
+
+input[type="text"]{
+  font-size: 25px;
+  height: 40px;
+  font-family:Cantarell;
+  text-align: center;
+  border-radius: 0px;
+  margin-bottom: 15px;
 }
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+.blue {
+  background-color: #71bbd4;
 }
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+
+.lettuce{
+  background-color: #9AD71A;
 }
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+
+.purple {
+  background-color: #8B86BC;
 }
+
+.dark-blue{
+  background-color: #5267BA;
+}
+
+@font-face {
+    font-family:Cantarell; 
+    src:url("../fonts/Cantarell-Regular.ttf");
+}
+
+.cantarell {
+  font-family:Cantarell, sans-serif;
+  line-height: 2em;
+}
+
+.icon-white {
+    margin-top: 3px;
+}
+
+@media (max-width: 720px) {
+    input[type="text"]{
+        width: 90%;
+    }
+}
+
