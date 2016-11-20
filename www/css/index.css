@@ -86,7 +86,11 @@ button {
   border-radius: 15px;
   border: 0px solid #d7d7d7;
   color: #6571f8;
+}
 
+.btn-block {
+  margin: 2em 0;
+  cursor: pointer;
 }
 
 
@@ -108,7 +112,7 @@ input[type="text"]{
   color: #4ebef0;
   border-radius: 50%;
   font-size: 2em;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 .form-control {
