@@ -123,6 +123,18 @@ input[type="text"]{
     margin-top: 3px;
 }
 
+footer{
+  position: fixed;
+  text-align: center;
+  font-size: 0.8em;
+  bottom: 0;
+  padding: 1em;
+}
+
+.footer-row {
+  text-align: center;
+}
+
 @media (max-width: 720px) {
     input[type="text"]{
         width: 90%;
